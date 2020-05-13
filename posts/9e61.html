@@ -273,7 +273,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/%E5%B0%81%E9%9D%A2/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -404,6 +404,15 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6/" class="post-category">
+                                软件
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -418,14 +427,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-09
+                    2020-05-13
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    921
+                    973
                 </div>
                 
 
@@ -510,8 +519,10 @@
 <li>正版中国</li>
 <li>app2站</li>
 </ul>
-</li>
-<li><strong>购物</strong><ul>
+<ol start="4">
+<li><strong>购物</strong></li>
+</ol>
+<ul>
 <li>什么值得买</li>
 <li>惠惠·4小时热门折扣</li>
 <li>分类中有淘宝、京东销量榜等节点</li>
@@ -531,7 +542,25 @@
 <p>🤗 <strong><em>（我的邀请码：00928）</em></strong> 🤗</p>
 <hr>
 <p>  真心非常喜爱「今日热榜」这款APP，前一段时间谣传「今日热榜」被下架了，当时就心中一痛💔 。心里想：我还差你一个Pro呢，怎么就没了！后来才知道，原来只是虚惊一场。不过「今日热榜」真的算是当下信息洪流中的一股清流。希望能越做越好，也希望大家会喜欢！！！</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -770,8 +799,7 @@
                 <a href="/posts/50dc.html">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="草帽一伙永远的伙伴——黄金梅丽号">
+                        <img src="/%E5%B0%81%E9%9D%A2/2.jpg" class="responsive-img" alt="草帽一伙永远的伙伴——黄金梅丽号">
                         
                         <span class="card-title">草帽一伙永远的伙伴——黄金梅丽号</span>
                     </div>
@@ -796,8 +824,12 @@
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            长颈鹿先生
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
+                                    生活
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -823,8 +855,7 @@
                 <a href="/posts/9e61.html">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="信息整合神器——今日热榜">
+                        <img src="/%E5%B0%81%E9%9D%A2/1.jpg" class="responsive-img" alt="信息整合神器——今日热榜">
                         
                         <span class="card-title">信息整合神器——今日热榜</span>
                     </div>
@@ -841,8 +872,12 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            长颈鹿先生
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6/" class="post-category">
+                                    软件
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1142,6 +1177,8 @@ $(function () {
     
 
     
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
 
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
@@ -1164,6 +1201,11 @@ $(function () {
 		if (windowWidth > 768) {
 		document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
 		}
+		</script>
+		
+		<!--动态线条背景-->
+		<script type="text/javascript"
+		color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
 		</script>
 
 </body>
