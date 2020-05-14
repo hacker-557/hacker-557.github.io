@@ -556,7 +556,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"软件","value":1},{"name":"hexo","value":1},{"name":"生活","value":1}],
+                data: [{"name":"hexo","value":1},{"name":"软件","value":1},{"name":"生活","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -580,7 +580,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["软件推荐","hexo","记录","海迷"]
+                data: ["hexo","记录","软件推荐","海迷"]
             }
         ],
         yAxis: [
@@ -857,13 +857,6 @@ $(function () {
 		color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
 		</script>
 
-		{% if theme.typing_effect.enable %}
-		<script src="/js/activate-power-mode.min.js"></script>
-		<script>
-		POWERMODE.colorful = {{ theme.typing_effect.colorful }};
-		POWERMODE.shake = {{ theme.typing_effect.shake }};
-		document.body.addEventListener('input', POWERMODE);
-		</script>
 
 </body>
 

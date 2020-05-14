@@ -323,19 +323,10 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" title="软件推荐: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="软件推荐" style="background-color: #F9EBEA;">软件推荐
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/hexo/" title="hexo: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="hexo" style="background-color: #F5EEF8;">hexo
+                            data-tagname="hexo" style="background-color: #F9EBEA;">hexo
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -344,7 +335,16 @@
                 <a href="/tags/%E8%AE%B0%E5%BD%95/" title="记录: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="记录" style="background-color: #D5F5E3;">记录
+                            data-tagname="记录" style="background-color: #F5EEF8;">记录
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" title="软件推荐: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="软件推荐" style="background-color: #D5F5E3;">软件推荐
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -382,7 +382,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"软件推荐","weight":1,"link":"/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"},{"text":"hexo","weight":1,"link":"/tags/hexo/"},{"text":"记录","weight":1,"link":"/tags/%E8%AE%B0%E5%BD%95/"},{"text":"海迷","weight":1,"link":"/tags/%E6%B5%B7%E8%BF%B7/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"hexo","weight":1,"link":"/tags/hexo/"},{"text":"记录","weight":1,"link":"/tags/%E8%AE%B0%E5%BD%95/"},{"text":"软件推荐","weight":1,"link":"/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"},{"text":"海迷","weight":1,"link":"/tags/%E6%B5%B7%E8%BF%B7/"}], {
         autoResize: true
     });
 </script>
@@ -572,13 +572,6 @@ $(function () {
 		color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
 		</script>
 
-		{% if theme.typing_effect.enable %}
-		<script src="/js/activate-power-mode.min.js"></script>
-		<script>
-		POWERMODE.colorful = {{ theme.typing_effect.colorful }};
-		POWERMODE.shake = {{ theme.typing_effect.shake }};
-		document.body.addEventListener('input', POWERMODE);
-		</script>
 
 </body>
 
