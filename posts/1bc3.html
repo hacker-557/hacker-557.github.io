@@ -395,8 +395,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                                <span class="chip bg-color">博客</span>
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                             <a href="/tags/%E8%AE%B0%E5%BD%95/">
@@ -411,8 +411,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                博客
+                            <a href="/categories/hexo/" class="post-category">
+                                hexo
                             </a>
                         
                     </div>
@@ -438,7 +438,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    309
+                    385
                 </div>
                 
 
@@ -473,8 +473,14 @@
 <p><strong>解决办法:</strong> 将斜杠后改为<code>root: /你仓库名字</code>,例如: root: /blog</p>
 </li>
 </ol>
-<p><em>注意:如果你改了这个,发现你本地4000端口上的「鼠标点击特效」等脚本不起作用了，但是不改，推送到码云上又无法显示图片，那么是你在码云创建仓库时，命名不规范造成。解决办法就是重新建个仓库，并将博客推送到新仓库。附「<a href="https://yafine-blog.cn/posts/51fb.html#%E9%83%A8%E7%BD%B2%E5%88%B0%E7%A0%81%E4%BA%91" target="_blank" rel="noopener">参考资料</a>」</em></p>
-<p>3. </p>
+<p><em>注意:如果你改了这个,发现你本地4000端口上的「鼠标点击特效」等脚本不起作用了，但是不改，推送到码云上又无法显示图片，那么可能是你在码云创建仓库时，命名不规范造成。解决办法就是重新建个仓库，并将博客推送到新仓库。附「<a href="https://yafine-blog.cn/posts/51fb.html#%E9%83%A8%E7%BD%B2%E5%88%B0%E7%A0%81%E4%BA%91" target="_blank" rel="noopener">参考资料</a>」</em></p>
+<ol start="3">
+<li><p>文章推送失败: </p>
+<p><strong>原因</strong>: 文章中某些格式错误</p>
+<p><strong>解决办法</strong>: 建议先在Git(或cmd)中先使用<code>hexo n “文章标题”</code>新建一篇文章,然后再在Markdown编辑器中撰写文章.(<em>Markdown编辑器首推「Typora」,不仅颜值爆表,更是实力派</em>     <span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f618.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f618.png?v8">😘</span>)</p>
+</li>
+<li></li>
+</ol>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -556,8 +562,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                                    <span class="chip bg-color">博客</span>
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
                                 <a href="/tags/%E8%AE%B0%E5%BD%95/">
@@ -1019,8 +1025,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    博客
+                            <a href="/categories/hexo/" class="post-category">
+                                    hexo
                                 </a>
                             
                             
@@ -1031,8 +1037,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                     <a href="/tags/%E8%AE%B0%E5%BD%95/">
@@ -1411,6 +1417,14 @@ $(function () {
 		<!--动态线条背景-->
 		<script type="text/javascript"
 		color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+		</script>
+
+		{% if theme.typing_effect.enable %}
+		<script src="/js/activate-power-mode.min.js"></script>
+		<script>
+		POWERMODE.colorful = {{ theme.typing_effect.colorful }};
+		POWERMODE.shake = {{ theme.typing_effect.shake }};
+		document.body.addEventListener('input', POWERMODE);
 		</script>
 
 </body>
