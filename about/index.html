@@ -310,7 +310,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/4.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/6.jpg)');
 </script>
 
 
@@ -326,7 +326,7 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">3</a></span>
+    <span class="count"><a href="/">4</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -340,7 +340,7 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">4</a></span>
+    <span class="count"><a href="/tags">5</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -356,7 +356,7 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">3</a></span>
+    <span class="count"><a href="/">4</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -370,7 +370,7 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">4</a></span>
+    <span class="count"><a href="/tags">5</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -514,7 +514,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,2,1],
+                data: [0,0,0,0,0,0,0,0,0,0,0,2,2],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -556,7 +556,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"hexo","value":1},{"name":"软件","value":1},{"name":"生活","value":1}],
+                data: [{"name":"hexo","value":1},{"name":"生活","value":2},{"name":"软件","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -580,7 +580,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["hexo","记录","软件推荐","海迷"]
+                data: ["记录","读书笔记","软件推荐","hexo","海迷"]
             }
         ],
         yAxis: [
@@ -593,7 +593,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [1,1,1,1],
+                data: [2,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -672,6 +672,50 @@
                 
 
             </div>
+		<div class="card">
+     <div class="card-content">
+         <div class="card-content article-card-content">
+             <div class="title center-align" data-aos="zoom-in-up">
+                 <i class="fa fa-address-book"></i>&nbsp;&nbsp;个人简历
+              </div>
+                 <div id="articleContent" data-aos="fade-up">
+                     <h3 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h3><ul>
+<li>🏠常驻之地:中国|安徽|淮北</li>
+<li>👀我的破壳之日: 1998</li>
+<li>🎓我的学历：大二本科在读</li>
+<li>💼专业: 电子信息类(尚待选择)</li>
+<li>🏀爱好: 吃饭|乒乓球|跑步|瞎倒腾</li>
+</ul>
+<h3 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h3><ul>
+<li>QQ: 1262714358</li>
+<li>电话: 保密</li>
+</ul>
+<h3 id="技能"><a href="#技能" class="headerlink" title="技能"></a>技能</h3><ul>
+<li>😨学习中…</li>
+</ul>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+                 </div>
+           </div>
+      </div>
+</div>	
         </div>
     </div>
 </main>
